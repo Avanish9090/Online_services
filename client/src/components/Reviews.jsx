@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 function Reviews() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const handleslide = Responsive();
   const [reviews, setReviews] = useState([]);
 
