@@ -7,7 +7,7 @@ import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
 
 function Contact() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [cData, setCdata] = useState([]);
 
   const getAllCdata = async () => {
