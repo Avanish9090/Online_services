@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function Latest() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [banner, setBaners] = useState([]);
 
   useEffect(() => {
