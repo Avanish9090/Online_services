@@ -6,7 +6,7 @@ import "sweetalert2/src/sweetalert2.scss";
 import toast, { Toaster } from "react-hot-toast";
 
 function Products() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [products, setProducts] = useState([]);
   const [formdata, setFormdata] = useState({
     title: "",
