@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 function Feedback() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [msg, setMsg] = useState("");
   const [msg1, setMsg1] = useState("");
   const [fData, setFdata] = useState({
