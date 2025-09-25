@@ -6,7 +6,7 @@ import UploadFormMoadal from "./UploadFormModal";
 import axios from "axios";
 
 function Forms() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [formDetail, setDetail] = useState([]);
   console.log(formDetail);
 
