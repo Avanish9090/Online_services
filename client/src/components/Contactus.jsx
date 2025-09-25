@@ -10,7 +10,7 @@ import { CiFacebook } from "react-icons/ci";
 import axios from "axios";
 
 function Contactus() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [contData, setContData] = useState({
