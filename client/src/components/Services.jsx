@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 function Services() {
-  const URL = "http://localhost:3000";
+  const URL = "https://prince-online-services.onrender.com";
   const slidesToShow = useResponsiveSlides();
   const [products, setProducts] = useState([]);
 
