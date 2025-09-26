@@ -75,11 +75,13 @@ function Latest() {
                 return (
                   <tr className="text-xl">
                     <th>{index + 1}</th>
+                    <td>
                     <img
                       className="h-[100px] w-[200px]"
                       src={item.path}
                       alt="banner"
                     />
+                    </td>
                     <td>{item.name}</td>
                     <th>
                       <button
