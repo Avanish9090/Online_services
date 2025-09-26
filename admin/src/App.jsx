@@ -16,9 +16,9 @@ function App() {
         <Route
           path="/latest"
           element={
-            <ProtectedRoute>
+
               <Latest />
-            </ProtectedRoute>
+         
           }
         />
         <Route
