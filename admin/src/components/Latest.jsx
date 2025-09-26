@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import axios from "axios";
 
 function Latest() {
-  const URL = "https://prince-online-services.onrender.com";
+  // const URL = "https://prince-online-services.onrender.com";
   const [banner, setBaners] = useState([]);
   const [file, setfile] = useState(null);
 
@@ -28,7 +28,7 @@ function Latest() {
     const formdata = new FormData();
     formdata.append("file", file);
     await toast.promise(
-      axios.post(`${URL}/upload`, formdata, {
+      axios.post("https://prince-online-services.onrender.com/upload", formdata, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
