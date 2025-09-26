@@ -41,7 +41,7 @@ function Login() {
       <h1 className="text-3xl font-inter text-red-600">Welcome Admin!</h1>
       <h1 className="text-2xl text-slate-500">Login Please</h1>
       <div className="mt-10">
-        <form onSubmit={handleLogin}>
+       
           <h1 className="text-xl mb-1">Email</h1>
           <input
             type="text"
@@ -66,12 +66,12 @@ function Login() {
 
           <br />
           <button
-            type="submit"
+           onClick={handleLogin}
             className="text-xl border-1 w-80 h-10 mt-5 rounded-xl bg-blue-400 hover:bg-blue-300"
           >
             Login
           </button>
-        </form>
+  
       </div>
     </div>
   );
