@@ -60,7 +60,7 @@ function Navbar() {
               </ul>
             </div>
             <img className="h-8 md:ml-20" src={logo} alt="logo" />
-            <p className="font-inter text-xl text-red-800">SERVICES</p>
+            <p className="font-inter text-xl text-red-800">SHOP</p>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="text-xl menu menu-horizontal px-1 font-inter">
