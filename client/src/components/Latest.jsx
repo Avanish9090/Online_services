@@ -17,7 +17,8 @@ function Latest() {
         console.log(err);
       } finally {
         setLoading(true);
-    };
+      }
+    }
     getBanner();
   }, []);
   var settings = {
