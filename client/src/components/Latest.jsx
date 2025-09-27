@@ -16,7 +16,7 @@ function Latest() {
       } catch (err) {
         console.log(err);
       } finally {
-        setLoading(true);
+        setLoading(false);
       }
     }
     getBanner();
