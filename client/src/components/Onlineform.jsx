@@ -38,7 +38,7 @@ function Onlineform() {
         <h1 className="text-center text-slate-500">
           We fill all type of online forms and book all india tickets
         </h1>
-        <div className=" mt-15 grid md:grid-cols-7 grid-cols-3 gap-2 md:mx-20">
+        <div className=" mt-15 grid md:grid-cols-6 grid-cols-2 gap-2 md:mx-20">
           {form.map((item) => (
             <button
               className="btn btn-success w-30 h-12 rounded-xl mx-5 my-4"
