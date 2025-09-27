@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 function Latest() {
   const URL = "https://prince-online-services.onrender.com";
+  const [loading , setLoading] = useState(true);
   const [banner, setBaners] = useState([]);
 
   useEffect(() => {
@@ -14,7 +15,8 @@ function Latest() {
         setBaners(item);
       } catch (err) {
         console.log(err);
-      }
+      } finally {
+        setLoading(true);
     };
     getBanner();
   }, []);
@@ -39,11 +41,17 @@ function Latest() {
           The Latest and updated events for our customers
         </h1>
         <div className="md:mx-25 mx-10 mt-4 ">
-          <Slider {...settings}>
+          {loading ? ( <p className="text-center text-xl font-semibold">
+              Loading..Please wait
+            </p>
+          ):(
+      <Slider {...settings}>
             {banner.map((item) => (
               <img className="h-80" src={item.path} alt="banner" />
             ))}
           </Slider>
+          )
+          
         </div>
       </div>
     </>
