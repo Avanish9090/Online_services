@@ -8,6 +8,7 @@ import axios from "axios";
 
 function Services() {
   const URL = "https://prince-online-services.onrender.com";
+  const [loading , setLoading] = useState(true)
   const slidesToShow = useResponsiveSlides();
   const [products, setProducts] = useState([]);
 
@@ -19,7 +20,8 @@ function Services() {
         setProducts(data);
       } catch (err) {
         console.log(err);
-      }
+      } finally {
+        setLoading(false);
     };
     getAllproducts();
   }, []);
@@ -47,13 +49,15 @@ function Services() {
           Services that are provided by us with best quality products
         </h1>
         <div className="w-full max-w-full px-2">
-          {
-            <Slider {...settings}>
+          {loading ? (
+            <p className="text-center text-xl font-semibold">Loading..Please wait.</p>
+          ):(
+             <Slider {...settings}>
               {products.map((item, index) => (
                 <Servicecard item={item} key={index} />
               ))}
             </Slider>
-          }
+          )}
         </div>
       </section>
     </>
