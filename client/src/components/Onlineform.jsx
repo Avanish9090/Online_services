@@ -19,6 +19,7 @@ function Onlineform() {
         console.log(err);
       } finally {
         setLoading(false)
+      }
     };
 
     getallForms();
