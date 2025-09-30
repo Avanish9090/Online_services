@@ -22,6 +22,7 @@ function Services() {
         console.log(err);
       } finally {
         setLoading(false);
+      }
     };
     getAllproducts();
   }, []);
